@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+  font-family: "Open Sans", serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  border-top: 10px solid purple;
+  border-bottom: 10px solid purple;
+}
+
+header{
+  text-align: center;
+  padding: 10px;
+  font-size: .75em;
+}
+
+header h1{
+  color: black;
+}
+
+h1, h2{
+  font-family: "playfair display", serif;
+  color: skyblue;
+} 
+
+h2{
+  clear: both;
+}
+
+/* Website Links except the nav */
+a:link{
+  color: black;
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+}
+a:hover{
+  color: blue;
+}
+a:active{
+  color: hotpink;
+}
+
+/* navigation */
+nav{
+  background-color: white;
+  border-top: 3px solid purple;
+  border-bottom: 3px solid purple;
+  line-height: 200%;
+  font-size: 1.2em;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 8px 0;
+  padding: 0;
+}
+nav li{
+  display: inline;
+  padding: 5px;
+ }
+nav a{
+  text-decoration: none;
+}
+nav a:link{
+  color: black;
+  }
+nav a:visited{
+  color: black;
+ }
+ nav a:hover{
+  color: blue;
+ }
+nav a:active{
+  color: hotpink;
+}
+
+/* This is the CSS for the hero image */
+.home-hero{
+  background-image: url(images/abstract.jpg);
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-hero h1{
+  color: black;
+  text-shadow: 2px 2px 2px skyblue;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(0,0,0,.2);
+}
+
+/* Main */
+main{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.float-right{
+  float: right;
+  max-width: 40%;
+  height: auto;
+  margin: 40px;
+  border-radius: 50px;
+}
+
+.float-left{
+  float: left;
+  max-width: 40%;
+  height: auto;
+  margin: 40px;
+  border-radius: 50px;
+}
+
+.picture{
+  max-width: 40%;
+  height: auto;
+  margin: 40px;
+  border-radius: 50px;
+}
+
+a.design{
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+a.design:hover{
+  color: skyblue;
+}
+
+/* Footer */
+footer{
+  border-top: purple 3px solid;
+  text-align: center;
+  clear: both;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+/* CSS without a media query--applies to all sizes unless overridden */
+ h1{
+        font-size: 4em;
+  }
+
+/* CSS adjustments for Tablets */
+@media only screen and (max-width: 1024px)
+{ 
+ h1{
+        font-size: 1.8em;
+    }
+}
+
+/* CSS adjustments for smaertphones */
+@media only screen and (max-width: 768px)
+{
+    h1{
+        font-size: 1.5em;
+    }
+}
